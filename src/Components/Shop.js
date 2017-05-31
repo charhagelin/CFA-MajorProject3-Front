@@ -3,6 +3,7 @@ import './App.css';
 import FoodItemList from './FoodItemList';
 import axios from 'axios';
 
+
 class Shop extends Component {
   constructor(props) {
     super(props);
@@ -29,11 +30,11 @@ class Shop extends Component {
     return(
       <div>
         <ul>
-           <h2>food items </h2>
-           {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} />}
-
-         </ul>
-
+          <div className="chickpea">
+             <h2>food items </h2>
+              {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} />}
+            </div>
+        </ul>
       </div>
     );
   }
