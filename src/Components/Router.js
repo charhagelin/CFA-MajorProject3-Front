@@ -3,6 +3,8 @@ import './App.css';
 import Shop from './Shop';
 import Contact from './Contact';
 import About from './About';
+import FoodItemList from './FoodItemList';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -15,13 +17,13 @@ const Nav = () => (
     <div>
       <div className="navigation">
         <ul>
-          <li><Link  to="/About" activeClassName="active">Home</Link></li>
-          <li><Link  to="/Contact" activeClassName="active">Contact</Link></li>
-          <li><Link to="/Shop" activeClassName="active">Shop</Link></li>
+          <li><Link  to="/" >Home</Link></li>
+          <li><Link  to="/Contact" >Contact</Link></li>
+          <li><Link to="/Shop" >Shop</Link></li>
 
         </ul>
         </div>
-        <Route path="/About" component={About}/>
+        <Route path="/About" component={root}/>
         <Route path="/Contact" component={Contact}/>
         <Route path="/Shop" component={Shop}/>
     </div>
