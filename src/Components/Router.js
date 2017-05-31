@@ -23,7 +23,7 @@ const Nav = () => (
 
         </ul>
         </div>
-        <Route path="/About" component={root}/>
+        <Route exact path="/" component={About}/>
         <Route path="/Contact" component={Contact}/>
         <Route path="/Shop" component={Shop}/>
     </div>

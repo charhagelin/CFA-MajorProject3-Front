@@ -3,17 +3,20 @@ import './App.css';
 import axios from 'axios';
 import FoodItemList from './FoodItemList';
 import Shop from './Shop';
+import About from './About';
 // import Contact from './Contact';
 import Nav from './Router';
 
 
-const Home = (props) => {
-  return(
+class Home extends Component {
+  render() {
+    return (
     <div>
-      <p> Home Page </p>
       < Nav />
+      
     </div>
-  )
+    )
+ }
 };
 
 
