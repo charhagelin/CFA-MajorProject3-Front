@@ -1,0 +1,42 @@
+
+.headerImg {
+  height: 500px;
+  background-image: url('https://farm2.staticflickr.com/1613/24163332569_8d121f6850_c.jpg');
+}
+.banner {
+  height: 150px;
+  background-color: black;
+  opacity: .5;
+  margin-top: -250px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    float: left;
+
+}
