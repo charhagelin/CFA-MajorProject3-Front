@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Shop from './Shop';
 import Contact from './Contact';
 import About from './About';
-import FoodItemList from './FoodItemList';
 
 import {
   BrowserRouter as Router,

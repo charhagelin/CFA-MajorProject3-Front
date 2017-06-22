@@ -7,8 +7,12 @@ import axios from 'axios';
 class Shop extends Component {
   constructor(props) {
     super(props);
+
+    this.addToOrder = this.addToOrder.bind(this);
+
     this.state = {
-      foodItems: []
+      foodItems: [],
+      order: []
     }
   };
 
@@ -25,6 +29,12 @@ class Shop extends Component {
       });
   }
 
+  addToOrder(key) {
+    const order = {...this.state.order};
+    order[key] = order[key] + 1 || 1;
+    this.setState({ order });
+  }
+
   render() {
     console.log('Render()');
     return(
@@ -32,7 +42,7 @@ class Shop extends Component {
         <ul>
           <div className="chickpea">
              <h2>food items </h2>
-              {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} />}
+              {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} addToOrder={this.addToOrder} />}
             </div>
         </ul>
       </div>
