@@ -75,3 +75,7 @@ a {
   background-image: url('http://res.cloudinary.com/charhagelin/image/upload/v1496230305/chickpea_ivp7bd.jpg');
   height: 800px;
 }
+
+.img {
+  height: 150px;
+}

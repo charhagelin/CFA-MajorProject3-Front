@@ -8,7 +8,7 @@ class Shop extends Component {
   constructor(props) {
     super(props);
 
-    this.addToOrder = this.addToOrder.bind(this);
+    // this.addToOrder = this.addToOrder.bind(this, keyArg);
 
     this.state = {
       foodItems: [],
@@ -29,9 +29,9 @@ class Shop extends Component {
       });
   }
 
-  addToOrder(key) {
+  addToOrder(keyArg) {
     const order = {...this.state.order};
-    order[key] = order[key] + 1 || 1;
+    order[keyArg] = order[keyArg] + 1 || 1;
     this.setState({ order });
   }
 
@@ -42,7 +42,7 @@ class Shop extends Component {
         <ul>
           <div className="chickpea">
              <h2>food items </h2>
-              {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} addToOrder={this.addToOrder} />}
+              {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} addToOrder={this.addToOrder.bind(this)} />}
             </div>
         </ul>
       </div>
