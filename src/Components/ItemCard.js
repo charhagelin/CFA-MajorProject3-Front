@@ -8,15 +8,16 @@ const ItemCard = (props) => {
     <div className="flexcontainer">
     	<div className="card">
         {props.foodItem.name}
-				{props.foodItem.photo}
-				<button onClick={() => props.addToOrder(props.index)}> Add to cart </button>
+				<button onClick={() => props.addToOrder(props.foodItem._id)}> Add to cart </button>
 				{props.foodItem.length}
-      <div className="overlay">
-        {props.foodItem.description}
-				<br/>
-        {props.foodItem.price}
-        {props.foodItem.unit}
-      </div>
+		     <div className="overlay">
+		       {props.foodItem.description}
+					<br/>
+
+
+		       {props.foodItem.price}
+		       {props.foodItem.unit}
+      	</div>
       </div>
     </div>
 	)

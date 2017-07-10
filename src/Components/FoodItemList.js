@@ -5,7 +5,7 @@ import ItemCard from './ItemCard';
 const FoodItemList = (props) => {
   return (
     <ul>
-      {props.foodItems.map((foodItem, i)=> <ItemCard key={i} index={i} foodItem={foodItem} addToOrder={props.addToOrder.bind(this)} />)}
+      {props.foodItems.map((foodItem, i)=> <ItemCard key={i} index={props._id} foodItem={foodItem} addToOrder={props.addToOrder.bind(this)} />)}
     </ul>
   )
 };
