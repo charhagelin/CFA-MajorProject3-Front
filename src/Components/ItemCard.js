@@ -5,21 +5,21 @@ import './App.css';
 
 const ItemCard = (props) => {
 	return (
-    <div className="flexcontainer">
-    	<div className="card">
-        {props.foodItem.name}
+		<div className="flexcontainer">
+			<div className="card">
+				{props.foodItem.name}
 				<button onClick={() => props.addToOrder(props.foodItem._id)}> Add to cart </button>
 				{props.foodItem.length}
-		     <div className="overlay">
-		       {props.foodItem.description}
-					<br/>
+				<div className="overlay">
+					{props.foodItem.description}
+					<br />
 
 
-		       {props.foodItem.price}
-		       {props.foodItem.unit}
-      	</div>
-      </div>
-    </div>
+					{props.foodItem.price}
+					{props.foodItem.unit}
+				</div>
+			</div>
+		</div>
 	)
 };
 
