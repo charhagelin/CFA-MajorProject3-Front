@@ -1,0 +1,23 @@
+[
+    {
+        "name": "falafel",
+        "image": "http://i2.wp.com/www.foodrepublic.com/wp-content/uploads/2012/05/favabeanfalafel_aliocha.jpg?fit=1400%2C927",
+        "price": 10,
+        "unit": "kg",
+        "description": "Chickpea and other things mushed together to a ball thats later fried"
+    },
+    {
+        "name": "Salsa",
+        "image": "http://blog.fablunch.com/wp-content/uploads/Salsa2.jpg",
+        "price": 5,
+        "unit": "box",
+        "description": "The red sauce, not the dance"
+    },
+    {
+        "name": "Hummus",
+        "image": "http://www.simplyrecipes.com/wp-content/uploads/2006/04/hummus-horiz-a-1200.jpg",
+        "price": 15,
+        "unit": "box",
+        "description": "That goodness you dont feel bad about eating because it's healthy"
+    }
+]

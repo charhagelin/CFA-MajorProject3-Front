@@ -3,6 +3,8 @@ import './App.css';
 import FoodItemList from './FoodItemList';
 import ShoppingCart from './ShoppingCart';
 import axios from 'axios';
+import data from './data.json';
+import './Shop.css';
 
 
 class Shop extends Component {
@@ -42,8 +44,24 @@ class Shop extends Component {
         <ul>
           <div className="chickpea">
             <h2>food items </h2>
-            {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} index={this.state.foodItems._id} addToOrder={this.addToOrder.bind(this)} />}
-            <ShoppingCart foodItem={this.state.foodItems} order={this.state.order} />
+            <div className="flex-grid">
+              <ul className="flex-list">
+                {data.map((data) => {
+                  return (
+                    <li className="flex-item">
+                      <h4> {data.name} </h4>
+                      <img src={data.image} alt="gallery" className="item-image" />
+                      <p> $ {data.price}/ <em> {data.unit} </em> </p>
+                      <p> {data.description} </p>
+                    </li>
+                  )
+                })}
+
+                {console.log}
+
+              </ul>
+            </div>
+
           </div>
         </ul>
       </div>
@@ -55,3 +73,8 @@ class Shop extends Component {
 // {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} />}
 
 export default Shop;
+
+/*för när jag kopplar min backend och drar in varorna färifrån 
+
+    /* {this.state.foodItems.length < 1 ? <p>loading...</p> : <FoodItemList foodItems={this.state.foodItems} index={this.state.foodItems._id} addToOrder={this.addToOrder.bind(this)} />}
+            <ShoppingCart foodItem={this.state.foodItems} order={this.state.order} /> */

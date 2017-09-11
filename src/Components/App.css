@@ -1,33 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory');
 
 
 .headerImg {
-  height: 500px;
+  height: 565px;
   background-image: url('http://res.cloudinary.com/charhagelin/image/upload/v1496223727/diLafel_svmhtz.jpg');
-  margin-top: -100px;
   box-shadow: 0 4px 2px -2px gray;
+  position: relative; 
+  z-index: -2;
 }
 
-.navigation {
-    margin-left: 55%;
+.hero-title1 {
+  width: 500px;
+  float: right;
+  margin-top: 8%;
+  color: #FFBA60;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #fff; 
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 30px;
 }
 
-.navigation li {
-  margin: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  list-style: none;
-  display: inline-flex;
-  justify-content: center;
+.hero-title2 {
+  margin-top: 20px;
+  width: 503px;
+  float: right;
+  margin: 15% -35%;
+  color: #FFBA60;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #fff; 
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 30px;
 }
 
-.navigation ul {
-  padding: 0;
+.home-content__subtitle {
+font-family: 'Give You Glory', cursive;
+padding-top: 5%;
+padding-bottom: 5%;
+line-height: 2;
+line-height: 1.5;
+
 }
 
-a {
-    text-decoration: none;
-    color: #99b143;
-    font-size: 30px;
+.home-content__text {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+
+}
+
+.dilafel-logo {
+  height: 200px;
+  margin-right: 10%;
+  margin-top: -23%;
+  float: right;
 }
 
 .flexcontainer {
@@ -68,8 +98,10 @@ a {
 }
 
 .container {
-  margin-left: 200px;
-  margin-right: 200px;
+  width: 60%;
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  padding-top: 5%;
 }
 .chickpea {
   background-image: url('http://res.cloudinary.com/charhagelin/image/upload/v1496230305/chickpea_ivp7bd.jpg');

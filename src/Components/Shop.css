@@ -1,0 +1,36 @@
+.flex-grid {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    padding: 5%;
+}
+
+.flex-list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+
+.flex-item {
+    background-color: #fff;
+    /* border: 1px solid black; */
+    box-shadow: -3px 3px 5px #ccc;      
+    display: flex;
+    flex-flow: column; 
+    min-width: 250px;
+    height: 350px;
+    padding: 3%;
+    margin: 3%;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.item-image {
+    height: 150px;
+}

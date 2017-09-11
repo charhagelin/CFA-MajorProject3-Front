@@ -1,0 +1,27 @@
+
+.navigation {
+    margin-left: 55%;
+}
+
+.navigation li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #99b143;
+    font-size: 30px;
+}
+
+.nav-wrapper {
+    background-color: #FFC887;
+}
